@@ -73,7 +73,7 @@ const TeamAnalysis = () =>{
               'team': team};
 
             
-            axios.post('http://127.0.0.1:5000/feature1', data)
+            axios.post('https://socceriq-production.up.railway.app/feature1', data)
             .then(response => {
               console.log(response.data)
               setgraph1x(response.data.grpah1.data);
